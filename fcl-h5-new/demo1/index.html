@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.bootcss.com/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="./swiper.animate1.0.3.min.js"></script>
+</head>
+<body>
+<div class="swiper-slide">
+    <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">内容</p>
+</div>
+
+<script>
+    //Swiper4.x
+    var mySwiper = new Swiper('.swiper-slide', {
+        on: {
+            init: function () {
+                swiperAnimateCache(this); //隐藏动画元素
+                swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+            }
+        }
+    })
+</script>
+</body>
+</html>

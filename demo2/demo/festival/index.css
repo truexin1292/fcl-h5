@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    background: url("images/bg.png") no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.music {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.music-off {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    z-index: 9999;
+}
+
+@-webkit-keyframes tipmove {
+    0% {
+        bottom: 10px;
+        opacity: 0
+    }
+    50% {
+        bottom: 15px;
+        opacity: 1
+    }
+    100% {
+        bottom: 20px;
+        opacity: 0
+    }
+}
+
+.ani {
+    position: absolute;
+}
+
+#array {
+    position: absolute;
+    z-index: 999;
+    -webkit-animation: tipmove 1.5s infinite ease-in-out;
+}
+
+.flower-border .left {
+    display: inline-block;
+    color: rgb(243, 196, 0);
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 87%;
+    overflow: hidden;
+}
+
+.flower-border .right {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: inline-block;
+    color: rgb(243, 196, 0);
+    height: 87%;
+    overflow: hidden;
+}
+
+.flower-border .right p {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.flower-border .left p {
+    font-size: 13px;
+    line-height: 13px;
+    transform: rotate(180deg);
+}
+
+.first .comp-txt {
+    font-size: 87.5%;
+    font-weight: 700;
+    color: rgb(243, 196, 0);
+}
+
+.first .home-logo {
+    width: 60%;
+}
+
+.first .comp-intro {
+    font-size: 87.5%;
+    color: rgb(243, 196, 0);
+    font-weight: 700;
+}
+
+.first .comp-intro-en {
+    font-size: 87.5%;
+    color: rgb(243, 196, 0);
+    font-weight: 700;
+}
+
+.sec .comp-txt {
+    font-size: 75%;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.sec .comp-intro {
+    font-size: 105%;
+    color: rgb(243, 196, 0);
+    font-weight: 700;
+}
+
+.sec .comp-name {
+    font-size: 60.5%;
+    color: #333;
+    background: rgb(243, 196, 0);
+}
