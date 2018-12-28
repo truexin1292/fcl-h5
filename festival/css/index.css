@@ -10,13 +10,14 @@ html, body {
 .swiper-container {
     width: 100%;
     height: 100%;
-    background: #fff;
 }
 
 .swiper-slide {
     width: 100%;
     height: 100%;
-    background: url("../images/bg.png") no-repeat left top;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
     background-size: 100% 100%;
 }
 
@@ -299,4 +300,97 @@ html, body {
     color: #fff;
     font-size: 87.5%;
     text-align: center;
+}
+
+.loading-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #333;
+    z-index: 9999;
+}
+
+.loading-progress {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 38%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    box-sizing: content-box;
+}
+
+@keyframes emp_rollingCW {
+    0% {
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        -o-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes emp_rollingCW {
+    0% {
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        -o-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+
+.loading-progress .item:nth-of-type(1) {
+    -webkit-box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    -moz-box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    -webkit-animation: emp_rollingCW .8s ease-in-out 0s infinite;
+    -o-animation: emp_rollingCW .8s ease-in-out 0s infinite;
+    animation: emp_rollingCW .8s ease-in-out 0s infinite;
+}
+
+.loading-progress .item:nth-of-type(2) {
+    -webkit-box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    -moz-box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    -webkit-animation: emp_rollingCW 1.1s ease-in-out 0s infinite reverse;
+    -o-animation: emp_rollingCW 1.1s ease-in-out 0s infinite reverse;
+    animation: emp_rollingCW 1.1s ease-in-out 0s infinite reverse;
+}
+
+.loading-progress .item:nth-of-type(3) {
+    -webkit-box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    -moz-box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    box-shadow: -2px 0 4px rgba(255, 255, 255, .1), inset 2px 0 4px rgba(255, 255, 255, .1);
+    -webkit-animation: emp_rollingCW 1.5s ease-in-out 0s infinite;
+    -o-animation: emp_rollingCW 1.5s ease-in-out 0s infinite;
+    animation: emp_rollingCW 1.5s ease-in-out 0s infinite;
+}
+
+.loading-progress .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
 }
