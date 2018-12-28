@@ -14,7 +14,7 @@
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=N6VVk8diz6ppLEx01Ycmc625zOleH2Kt"></script>
 </head>
-<body onload="init()" class="flex">
+<body onload="init()">
 <div class="swiper-container">
     <div class="fixed-audio">
         <img src="images/music.png" alt="" class="music" onclick="pauseMusic()"/>
@@ -1672,8 +1672,6 @@
         map.centerAndZoom(point, 17);
         var marker = new BMap.Marker(point);  // 创建标注
         map.addOverlay(marker);// 将标注添加到地图中
-        // map.enableDragging();
-        // map.enableScrollWheelZoom(true);
         var label = new BMap.Label("信基蜂巢", {offset: new BMap.Size(20, 20)});
         label.setStyle({
             borderColor: "#dcdcdc",
