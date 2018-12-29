@@ -67,7 +67,7 @@ html, body {
     position: absolute;
     bottom: 5px;
     left: 5px;
-    height: 87%;
+    height: 85%;
     overflow: hidden;
 }
 
@@ -77,7 +77,7 @@ html, body {
     right: 5px;
     display: inline-block;
     color: rgb(243, 196, 0);
-    height: 87%;
+    height: 85%;
     overflow: hidden;
 }
 
@@ -96,6 +96,7 @@ html, body {
     font-size: 87.5%;
     font-weight: 700;
     color: rgb(243, 196, 0);
+    margin-top: -3%;
 }
 
 .first .home-logo {
@@ -163,7 +164,7 @@ html, body {
 
 .fourth .flex-main img {
     vertical-align: middle;
-    /*margin-bottom: 10%;*/
+    margin-bottom: 10%;
 }
 
 .fourth .flex-main .img1 {
@@ -251,7 +252,7 @@ html, body {
 }
 
 .seventh .txt-center {
-    text-align: center;
+    text-indent: 42px;
 }
 
 .seventh #l-map {
