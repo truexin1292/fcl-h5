@@ -163,7 +163,7 @@ html, body {
 
 .fourth .flex-main img {
     vertical-align: middle;
-    margin-bottom: 30px;
+    /*margin-bottom: 10%;*/
 }
 
 .fourth .flex-main .img1 {
@@ -179,6 +179,7 @@ html, body {
 .fourth .flex-main .img3 {
     padding-left: 7%;
     width: 23%;
+    margin-top: 5%;
 }
 
 .fourth .flex-main .img4 {
@@ -189,6 +190,7 @@ html, body {
 .fourth .flex-main .img5 {
     width: 30%;
     padding-left: 5%;
+    margin-top: 5%;
 }
 
 .fourth .flex-main .img6 {
@@ -198,23 +200,23 @@ html, body {
 
 .fourth .flex-main .img7 {
     margin-left: -8%;
-    margin-top: -20%;
+    margin-top: -15%;
     width: 60%;
 }
 
 .fourth .flex-main .img8 {
-    margin-top: -22%;
+    margin-top: -20%;
     width: 40%;
 }
 
 .fourth .flex-main .img9 {
-    margin-top: -30%;
+    margin-top: -15%;
     padding-left: 5%;
     width: 35%;
 }
 
 .fourth .flex-main .img10 {
-    margin-top: -30%;
+    margin-top: -18%;
     padding-left: 22%;
     width: 25%;
 }
@@ -280,15 +282,10 @@ html, body {
     text-decoration: none;
     margin: auto;
     position: relative;
-    padding-left: 5%;
 }
 
-.seventh .set-btn a::before {
-    display: inline-block;
-    content: url("../images/to-map.png");
-    position: absolute;
-    left: 10%;
-    top: 20%;
+.seventh .set-btn a .to-map {
+    padding-right: 2px;
 }
 
 .eighth .focus-txt {
